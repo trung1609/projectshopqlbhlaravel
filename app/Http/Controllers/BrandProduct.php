@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use Session;
+use App\Models\Brand;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Redirect;
 session_start();
@@ -25,18 +26,26 @@ class BrandProduct extends Controller
     }
     public function all_brand_product(){
         $this->AuthLogin();
-        $all_brand_product = DB::table('tbl_brand')->get();
+        // $all_brand_product = DB::table('tbl_brand')->get(); // sử dụng DB
+        $all_brand_product = Brand::all(); //static trong oop
         $manager_brand_product = view('admin.all_brand_product')->with('all_brand_product',$all_brand_product);
         return view('admin_layout')->with('admin.all_brand_product', $manager_brand_product);
     }
     public function save_brand_product(Request $request){
         $this->AuthLogin();
-        $data = array();
-        $data['brand_name']=$request->brand_product_name;
-        $data['brand_desc']=$request->brand_product_desc;
-        $data['brand_status']=$request->brand_product_status;
+        $data = $request->all();
+        $brand = new Brand();
+        $brand->brand_name = $data['brand_product_name'];
+        $brand->brand_desc = $data['brand_product_desc'];
+        $brand->brand_status = $data['brand_product_status'];
+        $brand->save();
+        // $data = array();
+        // $data['brand_name']=$request->brand_product_name;
+        // $data['brand_desc']=$request->brand_product_desc;
+        // $data['brand_status']=$request->brand_product_status;
         
-        DB::table('tbl_brand')->insert($data);
+        // DB::table('tbl_brand')->insert($data);
+
         Session::put('message','Add brand success');
         return Redirect::to('add-brand-product');
     }
