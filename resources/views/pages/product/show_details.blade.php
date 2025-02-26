@@ -133,4 +133,5 @@
 							  </a>			
 						</div>
 					</div><!--/recommended_items-->
+					
 @endsection
