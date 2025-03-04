@@ -28,8 +28,8 @@ class AdminController extends Controller
     }
     public function dashboard(Request $request){
         $admin_email = $request->admin_email;
-        $admin_password = $request->admin_password;
-        $result = DB::table('tbl_admin')->where('admin_email', $admin_email)->orwhere('admin_password', $admin_password)->first();
+        $admin_password = md5($request->admin_password);
+        $result = DB::table('tbl_admin')->where('admin_email', $admin_email)->where('admin_password', $admin_password)->first();
         if($result){
             Session::put('admin_name',$result->admin_name);
             Session::put('admin_id',$result->admin_id);

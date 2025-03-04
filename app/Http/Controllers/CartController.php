@@ -12,7 +12,6 @@ session_start();
 class CartController extends Controller
 {
     public function save_cart(Request $request){
-        
         $productId = $request->productid_hidden;
         $quantity = $request->qty;
         $product_info = DB::table('tbl_product')->where('product_id',$productId)->first();

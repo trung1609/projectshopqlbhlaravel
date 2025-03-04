@@ -15,7 +15,7 @@ class CheckoutController extends Controller
         if($admin_id){
             return Redirect::to('dashboard');
         }else{
-            return Redirect::to('admin')->send();
+            return Redirect::to('admin')->send();//gửi tất cả data bằng hàm send() thay vì ghi lại từng biến chứa dữ liệu . Auth ko dc là đúng . Vì phải có dữ liệu trả về để auth check login 
         }
     }
     public function login_checkout(){
