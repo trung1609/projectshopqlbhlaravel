@@ -50,24 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h6><a href="#">Forgot Password?</a></h6>
 				<div class="clearfix"></div>
 				<input type="submit" value="Sign In" name="login">
-				<!-- <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div>
-					<br/>
-					@if($errors->has('g-recaptcha-response'))
-					<span class="invalid-feedback" style="display:block">
-					<strong>{{$errors->first('g-recaptcha-response')}}</strong>
-					</span>
-					@endif -->
 		</form>
-		<!-- <a class="login-fb" href="{{url('/login-facebook')}}">Login bằng facebook</a>
-		<a class="login-gg" href="{{url('/login-google')}}">Login bằng google</a> -->
-		<!-- <style>
-			.login-fb, .login-gg{
-				padding:5px;
-				font-size: 16px;
-				margin:5px;
-			}
-		</style> -->
-		<!-- <p>Don't Have an Account ?<a href="registration.html">Create an account</a></p> -->
 </div>
 </div>
 <script src="{{asset('public/backend/js/bootstrap.js')}}"></script>
