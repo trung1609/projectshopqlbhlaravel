@@ -35,7 +35,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 6. Chạy migration và seeder
+### 6. Chạy migration
 ```bash
 # Tạo bảng database
 php artisan migrate
