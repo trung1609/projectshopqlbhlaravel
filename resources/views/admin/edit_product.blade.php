@@ -29,7 +29,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Product Image</label>
                                     <input type="file" name="product_image" class="form-control" id="exampleInputEmail1">
-                                    <img src="{{URL::to('public/uploads/product/'.$pro->product_image)}}"height="100">
+                                    <img src="{{URL::to('uploads/product/'.$pro->product_image)}}"height="100">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Product Description</label>

@@ -23,7 +23,7 @@ Route::get('/', [HomeController::class,'index']);
 Route::get('/trang-chu','App\Http\Controllers\HomeController@index');
 Route::post('/tim-kiem','App\Http\Controllers\HomeController@search');
 
-//danh muc san pham trang chu 
+//danh muc san pham trang chu
 Route::get('/danh-muc-san-pham/{category_id}','App\Http\Controllers\CategoryProduct@show_category_home');
 
 //thuong-hieu-san-pham
@@ -90,7 +90,7 @@ Route::post('/login-customer',[CheckoutController::class,'login_customer']);
 Route::post('/add-customer',[CheckoutController::class,'add_customer']);
 Route::post('/save-checkout-customer',[CheckoutController::class,'save_checkout_customer']);
 
-//order 
+//order
 Route::get('/manage-order',[CheckoutController::class,'manage_order']);
 Route::get('/view-order/{orderId}',[CheckoutController::class,'view_order']);
 
@@ -102,6 +102,6 @@ Route::get('/login-facebook',[AdminController::class,'login_facebook']);
 Route::get('/admin/callback',[AdminController::class,'callback_facebook']);
 Route::get('/login-google',[AdminController::class,'login_google']);
 Route::get('/google/callback',[AdminController::class,'callback_google']);
-Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

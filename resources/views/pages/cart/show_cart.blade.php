@@ -11,7 +11,7 @@
 			<div class="table-responsive cart_info">
                 <?php
                 $content = Cart::content();
-               
+
                 ?>
 				<table class="table table-condensed">
 					<thead>
@@ -28,7 +28,7 @@
                         @foreach($content as $v_content)
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="{{('public/uploads/product/'.$v_content->options->image)}}" width="50" /></a>
+								<a href=""><img src="{{('uploads/product/'.$v_content->options->image)}}" width="50" /></a>
 							</td>
 							<td class="cart_description">
 								<h4><a href="">{{$v_content->name}}</a></h4>
@@ -90,7 +90,7 @@
                                 <?php
                             }
                                 ?>
-							
+
 					</div>
 				</div>
 			</div>

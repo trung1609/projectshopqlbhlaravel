@@ -6,19 +6,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Trang chủ | Shop bán hàng</title>
-    <link href="{{asset('public/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('public/frontend/css/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{asset('public/frontend/css/prettyPhoto.css')}}" rel="stylesheet">
-    <link href="{{asset('public/frontend/css/price-range.css')}}" rel="stylesheet">
-    <link href="{{asset('public/frontend/css/animate.css')}}" rel="stylesheet">
-    <link href="{{asset('public/frontend/css/main.css')}}" rel="stylesheet">
-    <link href="{{asset('public/frontend/css/responsive.css')}}" rel="stylesheet">
-    
+    <link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/css/prettyPhoto.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/css/price-range.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/css/animate.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/css/main.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/css/responsive.css')}}" rel="stylesheet">
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="{{('public/frontend/images/ico/favicon.ico')}}">
+    <![endif]-->
+    <link rel="shortcut icon" href="{{('frontend/images/ico/favicon.ico')}}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
@@ -31,9 +31,9 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="logo pull-left">
-                            <a href="index.html"><img src="{{('public/frontend/images/logo.png')}}" alt="" /></a>
+                            <a href="index.html"><img src="{{('frontend/images/logo.png')}}" alt="" /></a>
                         </div>
-                        
+
                     </div>
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div><!--/header-middle-->
-    
+
         <div class="header-bottom"><!--header-bottom-->
             <div class="container">
                 <div class="row">
@@ -91,7 +91,7 @@
                         <div class="mainmenu pull-left">
                             <ul class="nav navbar-nav collapse navbar-collapse">
                                 <li><a href="{{URL::to('/trang-chu')}}" class="active">Trang chủ</a></li>
-                                <li class="dropdown"><a href="{{URL::to('/trang-chu')}}">Sản phẩm</a></li> 
+                                <li class="dropdown"><a href="{{URL::to('/trang-chu')}}">Sản phẩm</a></li>
                                 <li><a href="{{URL::to('/show-cart')}}">Giỏ hàng</a></li>
                                 <li><a href="contact-us.html">Liên Hệ</a></li>
                             </ul>
@@ -110,7 +110,7 @@
             </div>
         </div><!--/header-bottom-->
     </header><!--/header-->
-    
+
     <section id="slider"><!--slider-->
         <div class="container">
             <div class="row">
@@ -121,7 +121,7 @@
                             <li data-target="#slider-carousel" data-slide-to="1"></li>
                             <li data-target="#slider-carousel" data-slide-to="2"></li>
                         </ol>
-                        
+
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-sm-6">
@@ -131,8 +131,8 @@
                                     <button type="button" class="btn btn-default get">Get it now</a></button>
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="{{('public/frontend/images/girl1.jpg')}}" class="girl img-responsive" alt="" />
-                                    <img src="{{('public/frontend/images/pricing.png')}}"  class="pricing" alt="" />
+                                    <img src="{{('frontend/images/girl1.jpg')}}" class="girl img-responsive" alt="" />
+                                    <img src="{{('frontend/images/pricing.png')}}"  class="pricing" alt="" />
                                 </div>
                             </div>
                             <div class="item">
@@ -143,11 +143,11 @@
                                     <button type="button" class="btn btn-default get">Get it now</button>
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="{{('public/frontend/images/girl2.jpg')}}" class="girl img-responsive" alt="" />
-                                    <img src="{{('public/frontend/images/pricing.png')}}"  class="pricing" alt="" />
+                                    <img src="{{('frontend/images/girl2.jpg')}}" class="girl img-responsive" alt="" />
+                                    <img src="{{('frontend/images/pricing.png')}}"  class="pricing" alt="" />
                                 </div>
                             </div>
-                            
+
                             <div class="item">
                                 <div class="col-sm-6">
                                     <h1><span>E</span>-SHOPPER</h1>
@@ -156,13 +156,13 @@
                                     <button type="button" class="btn btn-default get">Get it now</button>
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="{{('public/frontend/images/girl3.jpg')}}" class="girl img-responsive" alt="" />
-                                    <img src="{{('public/frontend/images/pricing.png')}}" class="pricing" alt="" />
+                                    <img src="{{('frontend/images/girl3.jpg')}}" class="girl img-responsive" alt="" />
+                                    <img src="{{('frontend/images/pricing.png')}}" class="pricing" alt="" />
                                 </div>
                             </div>
-                            
+
                         </div>
-                        
+
                         <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
                             <i class="fa fa-angle-left"></i>
                         </a>
@@ -170,12 +170,12 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section><!--/slider-->
-    
+
     <section>
         <div class="container">
             <div class="row">
@@ -191,7 +191,7 @@
                             </div>
                             @endforeach
                         </div><!--/category-products-->
-                    
+
                         <div class="brands_products"><!--brands_products-->
                             <h2>Thương hiệu sản phẩm</h2>
                             <div class="brands-name">
@@ -202,18 +202,18 @@
                                 </ul>
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
-                
+
                 <div class="col-sm-9 padding-right">
                     @yield('content')
-                    
+
                 </div>
             </div>
         </div>
     </section>
-    
+
     <footer id="footer"><!--Footer-->
         <div class="footer-top">
             <div class="container">
@@ -229,7 +229,7 @@
                             <div class="video-gallery text-center">
                                 <a href="#">
                                     <div class="iframe-img">
-                                        <img src="{{('public/frontend/images/iframe1.png')}}" alt="" />
+                                        <img src="{{('frontend/images/iframe1.png')}}" alt="" />
                                     </div>
                                     <div class="overlay-icon">
                                         <i class="fa fa-play-circle-o"></i>
@@ -239,12 +239,12 @@
                                 <h2>24 DEC 2014</h2>
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-3">
                             <div class="video-gallery text-center">
                                 <a href="#">
                                     <div class="iframe-img">
-                                        <img src="{{('public/frontend/images/iframe2.png')}}" alt="" />
+                                        <img src="{{('frontend/images/iframe2.png')}}" alt="" />
                                     </div>
                                     <div class="overlay-icon">
                                         <i class="fa fa-play-circle-o"></i>
@@ -254,12 +254,12 @@
                                 <h2>24 DEC 2014</h2>
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-3">
                             <div class="video-gallery text-center">
                                 <a href="#">
                                     <div class="iframe-img">
-                                        <img src="{{('public/frontend/images/iframe3.png')}}" alt="" />
+                                        <img src="{{('frontend/images/iframe3.png')}}" alt="" />
                                     </div>
                                     <div class="overlay-icon">
                                         <i class="fa fa-play-circle-o"></i>
@@ -269,12 +269,12 @@
                                 <h2>24 DEC 2014</h2>
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-3">
                             <div class="video-gallery text-center">
                                 <a href="#">
                                     <div class="iframe-img">
-                                        <img src="{{('public/frontend/images/iframe4.png')}}" alt="" />
+                                        <img src="{{('frontend/images/iframe4.png')}}" alt="" />
                                     </div>
                                     <div class="overlay-icon">
                                         <i class="fa fa-play-circle-o"></i>
@@ -285,11 +285,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
         <div class="footer-widget">
             <div class="container">
                 <div class="row">
@@ -343,11 +343,11 @@
                             </form>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
@@ -356,19 +356,19 @@
                 </div>
             </div>
         </div>
-        
-    </footer><!--/Footer-->
-    
 
-  
-    <script src="{{asset('public/frontend/js/jquery.js')}}"></script>
-    <script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/jquery.scrollUp.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/price-range.js')}}"></script>
-    <script src="{{asset('public/frontend/js/jquery.prettyPhoto.js')}}"></script>
-    <script src="{{asset('public/frontend/js/main.js')}}"></script>
+    </footer><!--/Footer-->
+
+
+
+    <script src="{{asset('frontend/js/jquery.js')}}"></script>
+    <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.scrollUp.min.js')}}"></script>
+    <script src="{{asset('frontend/js/price-range.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.prettyPhoto.js')}}"></script>
+    <script src="{{asset('frontend/js/main.js')}}"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-   
-    
+
+
 </body>
 </html>
